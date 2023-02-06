@@ -20,7 +20,7 @@ Heroku
 
 ## What is it?
 
-YaleWrappd, as the name implies, is a Yale-centric version of Spotify wrappd. It generates a playlist of top songs listened to by Yale students, by storing data on the most-played artists.  The auto-generated playlist is then released to the Yale commumnity via the “Spring Fling” Instagram. [Spring Fling is the annual large concert put on by Yale. Typically very popular music stars are booked for the event.]
+YaleWrappd, as the name implies, is a Yale-centric version of Spotify wrappd. It generates a playlist of top songs listened to by Yale students, by storing data on the most-played artists.  The auto-generated playlist is shared with the user, and the top artist data is then released to the Yale commumnity via the “Spring Fling” Instagram. [Spring Fling is the annual large concert put on by Yale. Typically very popular music stars are booked for the event.]
 
 ## How does it work?
 
