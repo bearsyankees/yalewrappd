@@ -1,6 +1,6 @@
 
 # YaleWrappd
-This is the code powering the site [yalewrappd.com](https://www.yalewrappd.com). This site was used by hundreds of Yale students to get a feel for what the campus was listening to.
+This is the code powering the site [yalewrappd.com](https://www.yalewrappd.com). This site is used by hundreds of Yale students to get a feel for what the campus was listening to.
 
 ## Languages/Libraries/Other Tech Used
 
