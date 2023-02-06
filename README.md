@@ -27,7 +27,7 @@ YaleWrappd, as the name implies, is a Yale-centric version of Spotify wrappd. It
 YaleWrappd process flow:
 
 * Users first sign in with their Yale credentials, to verify that they are affiliated with the university.
-* YaleWrappd then directs them to login to their Spotify account, reads their data and saves in a Redis DB their top songs and artists. It also checks if the user ID already exists in the DB as to not have duplicate entries and skew the data.
+* YaleWrappd then directs them to login to their Spotify account, reads their data and saves their top songs and artists in a Redis DB. It also checks if the user ID already exists in the DB as to not have duplicate entries and skew the data.
 * YaleWrappd then shows the user their top 50 artists of the last 6 months and adds a unique song to [this playlist](https://open.spotify.com/playlist/57IF8qCfvZTi06QQHqvYIv?si=f3adf20aa08748cc) of Yale's top songs.
 
 
