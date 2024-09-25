@@ -1,0 +1,98 @@
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="{{ url_for('static', filename='presentHoriz.css') }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.cdnfonts.com/css/neue-kabel" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-32DWRRDFXJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-32DWRRDFXJ');
+</script>
+
+<div >
+    <img src= "{{ url_for('static', filename='page-3.png') }}"  width="100%">
+</div>
+
+<div >
+    <a href="https://www.yalespringfling.com/" target="_blank">
+    <img class = centered src= "{{ url_for('static', filename='button-4-(continue-to-SF-website).png') }}"> </a>
+</div>
+<!--
+<div class="jumbotron text-center">
+  <h1 class="display-3">Thank You!</h1>
+  <p class="lead">We've recorded your submission (anonymously) and will share Yale's most listened-to artists very soon! </p>
+  <hr>
+  <p>
+    Questions? <a href="mailto:spring.fling@yale.edu">Contact us</a>
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="https://www.yalespringfling.com/" role="button">Continue to Spring Fling Website</a>
+  </p>
+</div> -->
+
+
+<div class="event-schedule-area-two bg-color pad100">
+        <!-- row end-->
+    <div class="section-title text-center">
+                    <div class="title-text">
+                        <img src= "{{ url_for('static', filename='top-50-artists.png') }}" width = 100%>
+                    </div>
+                    <p style="font-family: Neue kabel; font-size: 20px">
+                        {{random_quip}}
+                    </p>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="home" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                {% for artist in artists %}
+                                <td>
+                                  <div class="rank">
+                                                <span style="font-family: Neue kabel">{{artist[0]}}</span>
+                                            </div>
+                                  </td>
+                                {% endfor %}
+                                </tr>
+                                <tr>
+                                {% for artist in artists %}
+                                        <td>
+                                            <div class="name">
+
+                                                <img src={{artist[2]}} alt="" />
+                                                <span style="font-family: Neue kabel; text-align: center"> {{artist[1]}}</span>
+                                            </div>
+                                        </td>
+
+                                            {% endfor %}
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+            <!-- /col end-->
+        </div>
+        <!-- /row end-->
+    </div>
+</div>
+<p style="font-family: Neue kabel; font-size: 18px; text-align: center">
+    Wondering what Yalies listen to? <a href="https://open.spotify.com/playlist/57IF8qCfvZTi06QQHqvYIv?si=4d7a377f5a6f420e", target="_blank"> Here’s a playlist </a> that automatically adds your top song. If your top song is already on there, it’ll move down the list to your next most listened-to song.
+                    </p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/57IF8qCfvZTi06QQHqvYIv?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<div class="screen">
+   <!-- code -->
+   <div class="innerdiv">
+      <!-- text or other content -->
+   </div>
+
+</div>

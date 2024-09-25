@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Yale Wrappd{% endblock %}
+{% block content %}
+<style media="all">
+.mobile-display{display:none}
+.desktop-display{display:block}
+@media (max-width:800px){
+.desktop-display {display:none}
+.mobile-display {display:block}
+}
+html {
+    cursor: url("/static/cursor.png"), auto;
+}
+</style>
+
+<div class="mobile-display">
+<a href="/login"> <img src="{{ url_for('static', filename='mobileP2.png') }}" width="100%"> </a>
+</div>
+
+<div class="desktop-display">
+<a href="/login"> <img src="{{ url_for('static', filename='page-2.png') }}" width="100%"> </a>
+<a href="/login"><img src="{{ url_for('static', filename='button-2-(click-here).png') }}" width="30%" style="float: right"> </a>
+</div>
+<!--<a href="/me" class="btn btn-secondary">I don't have Spotify :( but I still want to see!</a>-->
+
+{% endblock %}
